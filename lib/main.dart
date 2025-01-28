@@ -18,10 +18,8 @@ void main() async {
   FlutterNativeSplash.remove();
   runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -35,12 +33,11 @@ class MyApp extends StatelessWidget {
 }
 
 class HealthcareChatbot extends StatefulWidget {
-  const HealthcareChatbot({super.key});
-
+  const HealthcareChatbot({super.key}) {
+ }
   @override
   _HealthcareChatbotState createState() => _HealthcareChatbotState();
 }
-
 class _HealthcareChatbotState extends State<HealthcareChatbot> {
   late FlutterTts flutterTts;
   late stt.SpeechToText speech;
